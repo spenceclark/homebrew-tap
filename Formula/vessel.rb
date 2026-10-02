@@ -2,12 +2,12 @@ class Vessel < Formula
   desc "Lightweight, local-first observability proxy for LLM traffic"
   homepage "https://github.com/spenceclark/Vessel"
   license "MIT"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.0/vessel-0.3.0-osx-arm64.tar.gz"
-      sha256 "219400b24533b3193ea69358ff225b237c5f84d75a22506c1b99222d3838eea7"
+      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.1/vessel-0.3.1-osx-arm64.tar.gz"
+      sha256 "0a440373a8c503f98c48419669d8027bb9b31d957d1072efc4d0c86dd57f03e9"
     else
       odie "vessel: Intel Macs aren't published by this tap; build from source (https://github.com/spenceclark/Vessel)."
     end
@@ -15,11 +15,11 @@ class Vessel < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.0/vessel-0.3.0-linux-arm64.tar.gz"
-      sha256 "6d86802f46e9851eba3b0d1eef2b3181fabcced2126c9cb0da94542647a9ba05"
+      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.1/vessel-0.3.1-linux-arm64.tar.gz"
+      sha256 "7a6f956eec9c0357d323bf5943787fec61bcd08e5fe9f61095a2b0d0587ebf5e"
     else
-      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.0/vessel-0.3.0-linux-x64.tar.gz"
-      sha256 "b94f3d291168b92c7a8ed87f69278833d8236ccd651866acd34de041c06da1b5"
+      url "https://github.com/spenceclark/Vessel/releases/download/v0.3.1/vessel-0.3.1-linux-x64.tar.gz"
+      sha256 "cf2c2e15c64635be0bec06ae34e7acc1de08946ae5f409b379cddcae00e5e79e"
     end
   end
 
